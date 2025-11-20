@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { 
-    View,
-    Text,
-    TextInput,
+import React, { useEffect, useState } from "react";
+import {
+    Alert,
     Button,
     FlatList,
-    TouchableOpacity,
     StyleSheet,
-    Alert
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View
 } from "react-native";
 
 // Placeholder functions for health data and emergency call
@@ -42,6 +42,11 @@ const SettingsPanel: React.FC = () => {
     const [healthData, setHealthData] = useState<any>(null);
     const [showHealthData, setShowHealthData] = useState(false);
 
+    useEffect(() => {
+        // Mobile Ads SDK is initialized automatically with react-native-google-mobile-ads
+        // Test ads will be shown when using test device IDs in ad unit IDs
+    }, []);
+
     const addContact = () => {
         if (!firstName || !lastName || !phone) return;
         setContacts([
@@ -71,8 +76,7 @@ const SettingsPanel: React.FC = () => {
         <View style={styles.container}>
             {/* Ad Banner Area */}
             <View style={styles.adBanner}>
-                {/* Replace this with your ad component, e.g., AdMobBanner */}
-                <Text style={styles.adText}>Ad Banner Placeholder</Text>
+                <Text style={styles.adText}>Ad Banner</Text>
             </View>
 
             <Text style={styles.header}>Settings Panel</Text>
