@@ -53,3 +53,6 @@ Join our community of developers creating universal apps.
 - npm run android
 - npm run ios
 - npm run web
+
+## Follow the projects progress on Github
+[SOS App Jira Board](https://mgonzalez-droid.atlassian.net/jira/software/projects/SOS/boards/1?atlOrigin=eyJpIjoiZGZiM2RjNjkwZDQ3NDRlZDg5ZTZjZWYyNjU2MTEwMTgiLCJwIjoiaiJ9)
